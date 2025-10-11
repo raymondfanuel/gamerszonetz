@@ -586,6 +586,78 @@ nav ul li a i {
   }
 }
 
+/* counter */
+
+.stats-section {
+  font-family: 'sakana', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+  border:30px #022639 solid;
+}
+
+.stat h2 {
+  font-size: 3rem;
+  color: #022639;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: #022639;
+}
+
+
+/* counter reponsive */
+
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 10px;
+  }
+
+  .stat h2 {
+    font-size: 2rem;
+  }
+
+  .stat p {
+    font-size: 1rem;
+  }
+}
+
+
+/* footer styling */
+
+footer {
+  background-color: #022639 ;
+  color: #f5f5f5 ;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* footer reponsive */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 0;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+
 
 
 
