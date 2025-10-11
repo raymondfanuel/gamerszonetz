@@ -235,24 +235,203 @@ nav ul li a i {
   }
 }
 
-/* styling games section */
+/* styling about secrtion */
+.about {
+  display: flex;
+  flex-direction: column;
+  color: #f5f5f5 ;
+  background-color: #022639;
+}
 
+.about-container {
+  margin: 10px 5% 50px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.about-container h2 {
+  font-family: 'sakana';
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #ffffff ;
+}
+
+.about-container p {
+  font-family: 'Poppins';
+  font-size: 15px;
+  line-height: 1.6;
+  color: #f5f5f5 ;
+  text-align: justify;
+}
+
+.about-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* hero btn */
+.about-btn {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.about-btn a {
+  text-decoration: none;
+  font-family: 'Poppins';
+}
+
+.abtn {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #022639 ;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+/* about section responsive */
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: auto;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-container h2 {
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .about-container p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    text-align: justify;
+  }
+
+  .about-container img {
+    display: none;
+  }
+
+  .about-btn {
+    justify-content: center;
+  }
+}
+
+/* stlying play section */
+
+.play {
+  display: flex;
+  flex-direction: column;
+}
+
+.play-header {
+  text-align: center;
+  font-family: 'sakana';
+  font-size: 25px;
+  margin-top: 10px;
+  color: #022639 ;
+}
+
+.play-container {
+  margin: 10px 5% 50px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.play-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* play section reponsive */
+
+@media (max-width: 768px) {
+  .play {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .play-container {
+    grid-template-columns: 0.9fr;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .play-header {
+    font-size: 20px;
+  }
+
+  .play-container video {
+    margin-top: 10px;
+  }
+}
+
+
+/* styling games section */
 .games {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  background-color: #022639 ;
 }
 
 .games-header {
   text-align: center;
-  color: #022639 ;
   font-family: 'sakana';
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #ffffff ;
 }
 
 .games-container {
-  background-color: aqua;
-  height: 60vh;
-  margin: 0 5% 20px 5%;
+  margin: 10px 5% 50px 5%;
+  padding: 10px 10px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
 }
+
+.games-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/*  game section responsive*/
+
+@media (max-width: 768px) {
+  .games-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .games-header {
+    font-size: 20px;
+  }
+
+  .games-container img {
+    border-radius: 5px;
+  }
+}
+
