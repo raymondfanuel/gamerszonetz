@@ -215,6 +215,7 @@ nav ul li a i {
   .hero-container {
     grid-template-columns: auto;
     height: auto;
+    row-gap: 10px;
     margin: 85px 5% 20px 5%;
     padding: 10px;
   }
@@ -232,4 +233,26 @@ nav ul li a i {
   .hero-line {
     width: 100px;
   }
+}
+
+/* styling games section */
+
+.games {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.games-header {
+  text-align: center;
+  color: #022639 ;
+  font-family: 'sakana';
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.games-container {
+  background-color: aqua;
+  height: 60vh;
+  margin: 0 5% 20px 5%;
 }
