@@ -416,6 +416,29 @@ nav ul li a i {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+.game-footer {
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.game-footer a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #ffffff ;
+  color: #022639;
+  padding: 5px 10px;
+}
+
+.game-footer a:hover {
+  background-color: #014f73 ;
+  color: white;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
 /*  game section responsive*/
 
 @media (max-width: 768px) {
@@ -434,4 +457,135 @@ nav ul li a i {
     border-radius: 5px;
   }
 }
+
+
+/* maelekezo section styling */
+
+.maelekezo {
+  display: flex;
+  flex-direction: column;
+  color: #022639 ;
+  background-color: #f5f5f5 ;
+}
+
+.maelekezo-header {
+  text-align: center;
+  font-family: 'sakana';
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #022639 ;
+}
+
+.maelekezo-container {
+  margin: 10px 5% 50px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.maelekezo-container h3 {
+  font-family: 'sakana';
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #022639 ;
+}
+
+.maelekezo-container p {
+  font-family: 'Poppins';
+  font-size: 15px;
+  line-height: 1.6;
+  color: #022639 ;
+  text-align: justify;
+}
+
+/* malekezo responsiveness */
+
+@media (max-width: 768px) {
+  .maelekezo-container {
+    grid-template-columns: auto;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .maelekezo-container h3 {
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .maelekezo-container p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    text-align: justify;
+  }
+}
+
+/* malipo section styling */
+.malipo {
+  display: flex;
+  flex-direction: column;
+  color: #f5f5f5 ;
+  background-color: #022639;
+  margin-bottom: 20px;
+}
+
+.malipo-header {
+  text-align: center;
+  font-family: 'sakana';
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #ffffff ;
+}
+
+.malipo-container {
+  margin: 10px 5% 50px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.malipo-container h3 {
+  font-family: 'sakana';
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #ffffff ;
+}
+
+.malipo-container p {
+  font-family: 'Poppins';
+  font-size: 15px;
+  line-height: 1.6;
+  color: #f5f5f5 ;
+  text-align: justify;
+}
+
+/* malipo responsiveness */
+@media (max-width: 768px) {
+  .malipo-container {
+    grid-template-columns: auto;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .malipo-container h3 {
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .malipo-container p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    text-align: justify;
+  }
+}
+
+
+
 
