@@ -634,8 +634,8 @@ nav ul li a i {
 /* footer styling */
 
 footer {
-  background-color: #022639 ;
-  color: #f5f5f5 ;
+  color: #022639 ;
+  background-color: #ffffff ;
   text-align: center;
   padding: 20px 0;
   font-family: 'Poppins', sans-serif;
@@ -644,6 +644,31 @@ footer {
 footer p {
   margin: 0;
   font-size: 14px;
+  font-weight: 500;
+}
+
+footer .footer-content {
+  margin-top: 10px;
+}
+
+.footer-content h3 {
+  font-family: 'sakana';
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: #022639 ;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #014f73 ;
 }
 
 /* footer reponsive */
