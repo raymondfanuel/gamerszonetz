@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="access.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAMERZONETZ GAMES</title>
+  <link rel="shortcut icon" href="assets/images/hasheem-bg.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit';
+  background-color: white;
+  margin: 0;
+  height: 100vh;
+  background-image: url('assets/images/download.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#loginForm {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(11, 0, 41, 0.712);
+  text-align: center;
+}
+
+#loginForm i {
+  font-size: 70px;
+  color: rgb(2, 38, 57);
+  font-weight: 200;
+}
+
+#loginForm h2 {
+  color: rgb(2, 38, 57);
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#loginForm input {
+  border: 2px solid rgb(2, 38, 57);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+#loginForm button {
+  background-color: rgb(2, 38, 57);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+</style>
+<body>
+  <div id="loginForm">
+    <div id="errorMessage" class="error" style="color: red;"></div>
+    <i class='bx  bx-football'  ></i> 
+    <h2>Enter PIN to Download Games</h2>
+    <input type="password" id="pinInput" placeholder="Enter PIN" maxlength="4">
+    <br><br>
+    <button onclick="checkPin()">Login</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
