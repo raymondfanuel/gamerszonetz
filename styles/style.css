@@ -400,7 +400,7 @@ nav ul li a i {
 }
 
 .games-container {
-  margin: 10px 5% 50px 5%;
+  margin: 10px 50% 50px 50%;
   padding: 10px 10px;
   background-color: white;
   display: grid;
@@ -408,7 +408,6 @@ nav ul li a i {
   column-gap: 20px;
   row-gap: 20px;
 }
-
 .games-container img {
   width: 100%;
   height: auto;
@@ -838,13 +837,13 @@ footer .social-icons a:hover {
   display: flex;
   flex-direction: column;
   row-gap: 50px;
-  height: 115vh;
+  height: 95vh;
   background: url('../assets/images/download.jpeg') no-repeat center center/cover;
   margin-top: -78px;
 }
 
 .nbc-hero-container {
-  text-align: center;
+ text-align: center;
   justify-content: center;
   color: white;
   backdrop-filter: blur(25px);
@@ -853,8 +852,8 @@ footer .social-icons a:hover {
   margin: 90px 5% 0 5%;
   display: grid;
   column-gap: 10px;
-  grid-template-columns: 1fr 1fr;
-  height: 84vh;
+  grid-template-columns: auto auto;
+  height: 65vh;
 }
 
 /* Left column for stacked images */
@@ -877,7 +876,7 @@ footer .social-icons a:hover {
   width: fit-content;
   height: fit-content;
   border-radius: 10px;
-  max-width: 300px;
+  
 }
 
 /* Right column for text content */
@@ -1922,3 +1921,235 @@ footer .social-icons a:hover {
     font-size: 13px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Dual Buttons Styling */
+.dual-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.choose-btn.nbc-btn {
+  background: linear-gradient(135deg, #023E4D, #022639);
+  color: white;
+}
+
+.choose-btn.nbc-btn:hover {
+  background: linear-gradient(135deg, #022639, #023E4D);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(2, 62, 77, 0.3);
+}
+
+.choose-btn.bus-btn {
+  background: linear-gradient(135deg, #35b5ff, #35aeff);
+  color: white;
+}
+
+.choose-btn.bus-btn:hover {
+  background: linear-gradient(135deg, #35ffff, #359dff);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+}
+
+/* Responsive Design for Dual Buttons */
+@media (max-width: 768px) {
+  .dual-buttons {
+    gap: 10px;
+  }
+  
+  .choose-btn {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dual-buttons {
+    gap: 8px;
+  }
+  
+  .choose-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* PC & Mobile Game Sections */
+.pc-game-section, .mobile-game-section {
+  background: white;
+  padding: 40px 0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.pc-game-header, .mobile-game-header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.pc-game-header h2, .mobile-game-header h2 {
+  font-family: 'sakana';
+  font-size: 32px;
+  color: #022639;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pc-game-container, .mobile-game-container {
+  margin: 0 5%;
+}
+
+.pc-game-info, .mobile-game-info {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.game-image-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pc-game-info h3, .mobile-game-info h3 {
+  font-family: 'sakana';
+  font-size: 24px;
+  color: #022639;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.game-description {
+  font-family: 'Poppins';
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.download-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.download-link-item {
+  background: #023E4D;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.download-link-item h5 {
+  font-family: 'Poppins';
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+/* PC & Mobile Pins Sections */
+.pc-pins, .mobile-pins {
+  background: #f8f9fa;
+  padding: 40px 0;
+}
+
+.pc-pins-header, .mobile-pins-header {
+  text-align: center;
+  font-family: 'sakana';
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #022639;
+}
+
+.pc-pins-container, .mobile-pins-container {
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Button Colors for Choose Page */
+.choose-btn.pc-btn {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+}
+
+.choose-btn.pc-btn:hover {
+  background: linear-gradient(135deg, #20c997, #28a745);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+.choose-btn.mobile-btn {
+  background: linear-gradient(135deg, #6f42c1, #e83e8c);
+  color: white;
+}
+
+.choose-btn.mobile-btn:hover {
+  background: linear-gradient(135deg, #e83e8c, #6f42c1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(111, 66, 193, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pc-hero-container, .mobile-hero-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    row-gap: 25px;
+    margin: 80px 3% 0 3%;
+  }
+  
+  .pc-hero-content h1, .mobile-hero-content h1 {
+    font-size: 28px;
+  }
+  
+  .pc-hero-content img, .mobile-hero-content img {
+    max-width: 300px;
+  }
+  
+  .download-links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pc-payment-container, .mobile-payment-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+
