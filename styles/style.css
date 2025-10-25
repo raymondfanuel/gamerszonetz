@@ -328,7 +328,7 @@ nav ul li a i {
   }
 }
 
-/* stlying play section */
+/* stlying play section 
 
 .play {
   display: flex;
@@ -359,7 +359,7 @@ nav ul li a i {
 }
 
 
-/* play section reponsive */
+/* play section reponsive 
 
 @media (max-width: 768px) {
   .play {
@@ -382,6 +382,7 @@ nav ul li a i {
   }
 }
 
+*/
 
 /* styling games section */
 .games {
