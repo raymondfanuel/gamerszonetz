@@ -41,3 +41,17 @@ const speed = 300; // smaller = faster
   });
 
   observer.observe(document.querySelector('.stats-section'));
+
+let index = 0;
+
+const slides = document.querySelector(".slides");
+const images = document.querySelectorAll(".slides img");
+
+slides.style.width = `${images.length * 100}vw`; // auto adjust width
+
+const totalSlides = images.length;
+
+setInterval(() => {
+  index = (index + 1) % totalSlides;
+  slides.style.transform = `translateX(-${index * 100}vw)`;
+}, 4000);
